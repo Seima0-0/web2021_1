@@ -2,9 +2,17 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('test2.db');
 
 let schema = `
-create table test(
+create table gamesoft(
   id integer primary key,
-  name text
+  name text not null,
+  maker_id interger not null,
+  hatubaibi text not null,
+  hanbaisuu interger not null
+);
+create table maker(
+  id integer primary key,
+  makername text not null,
+  hardware text not null
 );
 `
 
