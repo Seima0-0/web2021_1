@@ -6,13 +6,17 @@ create table gamesoft(
   id integer primary key,
   name text not null,
   maker_id integer not null,
+  hard_id integer not null,
   hatubaibi text not null,
   hanbaisuu integer not null
 );
 create table maker(
   id integer primary key,
-  makername text not null,
-  hardware text not null
+  makername text not null
+);
+create table hardware(
+ id inreger primary key,
+ hardware text not null
 );
 `
 
