@@ -5,9 +5,9 @@ let schema = `
 create table gamesoft(
   id integer primary key,
   name text not null,
-  maker_id interger not null,
+  maker_id integer not null,
   hatubaibi text not null,
-  hanbaisuu interger not null
+  hanbaisuu integer not null
 );
 create table maker(
   id integer primary key,
